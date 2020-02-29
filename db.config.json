@@ -1,0 +1,8 @@
+{
+    "user": "postgres",
+    "pass": "123456",
+    "host": "39.107.29.225",
+    "port": 5432,
+    "db": "hello",
+    "tls":false
+}
