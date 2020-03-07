@@ -45,9 +45,9 @@ impl PostgresConfig {
 #[derive(Debug, RustcEncodable, RustcDecodable)]
 pub struct Record {
     id: i32,
-    name: String,
     score: f32,
-    mode: MinesweeperMode,
+    name: String,
+    mode: String,
 }
 
 impl Record {
@@ -56,7 +56,7 @@ impl Record {
             id: 0,
             name: name,
             score: score,
-            mode: mode,
+            mode: format!("{}", mode),
         }
     }
 
